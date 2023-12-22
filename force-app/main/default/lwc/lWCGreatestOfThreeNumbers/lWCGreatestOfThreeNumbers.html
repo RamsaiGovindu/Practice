@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="Greatest Of Three Numbers">
+        <lightning-input label="Enter First Number"  onchange={HandleFirstNumber} value={fnumber}></lightning-input>    <!--here name attribute wont work -->
+        <lightning-input label="Enter second Number" onchange={HandleSecondNumber} value={snumber}></lightning-input>   <!-- value attribute is used to get values from js-->
+        <lightning-input label="Enter Third Number"  onchange={HandleThirdNumber} value={tnumber}></lightning-input>
+
+        <lightning-button-group>
+            <lightning-button label="calculate" variant="brand" onclick={HandleCalculate}></lightning-button>
+            <lightning-button label="clear" variant="destructive" onclick={HandleClear}></lightning-button>
+        </lightning-button-group>
+    </lightning-card>
+</template> 
